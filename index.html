@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1 id="doc1">Print the DocumentOne text here</h1>
+    <button type="button" onclick="getDocOne()">Change the text</button>
+    <h1 id="doc2">Print the DocumentTwo text here</h1>
+    <button type="button" onclick="getDocTwo()">Change the text</button>
+
+    <script>
+     function getDocOne()
+      {
+        // Declare a variable that holds an XMLHttpRequest object
+        var requestOne = new XMLHttpRequest();
+
+        // Now we need to create a function that will happen when the server sends us info
+        requestOne.onreadystatechange = function() 
+        {
+          if (this.readyState == ???? && this.status == ????) 
+          {
+            document.getElementById("doc1").innerHTML = this.responseText;
+          }
+        };
+        // open request
+        ????
+        // send request
+        ????
+      }
+
+      function getDocTwo()
+      {
+        // Declare a variable that holds an XMLHttpRequest object
+        var requestTwo = new XMLHttpRequest();
+
+        // Fill in the rest
+        ????
+      }
+
+    </script>
+  </body>
+</html>
